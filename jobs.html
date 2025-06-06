@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureForge | Job Find </title>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="top-nav">
+        <div class="logo-box">
+            <h2><i>FutureForge</i></h2>
+        </div>
+
+        <label for="" class="icons">
+            <i class="bx bx-menu"></i> 
+        </label>
+
+        <nav class="nav-bar" id="navLinks" >
+            <a href="index.html">Home</a>
+            <a href="register.html">Register/Login</a>
+            <a href="story.html">Profile</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="skills.html">Skills</a>
+        </nav>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuIcon = document.querySelector(".icons");
+                const navLinks = document.getElementById("navLinks");
+
+                menuIcon.addEventListener("click", () => {
+                    navLinks.classList.toggle("active");
+                });
+            });
+        </script>
+    </header>
+
+     <table>
+        <tr>  
+            <td width="800px" style="color: white; background-color: black; padding: 50px;">
+                  <main>
+                  <section class="job-main-container single-panel">
+                    <div class="job-info-panel">
+                      <section class="job-opportunity">
+                        <h2>Welcome, <span id="user-name"></span>!</h2>
+                        <div class="job-details">
+                          <p id="intro"></p>
+                          <p><strong>Your work preference:</strong> <span id="work-type"></span></p>
+                          <p><strong>Your skills:</strong> <span id="skills"></span></p>
+                          <p><strong>Your readiness score:</strong> <span id="score"></span>%</p>
+                        </div>
+                      </section>
+                      <section class="skills-link">
+                        <h3>Learn Future Skills 📚</h3>
+                        <button class="btn" onclick="window.location.href='Skills.html'">Courses</button>
+                      </section>
+                      <div id="popup" class="modal">
+                        <div class="modal-content">
+                          <span class="close-btn">&times;</span>
+                          <div class="story-end">
+                            <h3>Congratulations! 🎯</h3>
+                            <p>You have started your job search journey with great momentum!</p>
+                            <p id="date"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </main>
+            </td>
+
+            <td  style="color: white; width: 800px;" align="center" valign="middle" >
+                         <h1 style="font-size: 50px;">Job Opportunities</h1>
+            </td>
+        </tr>
+    </table>    
+
+
+
+ 
+
+
+
+           
+
+    
+    
+    <script src="script.js"></script>
+
+    <footer>
+    <div class="footer-left">
+      <p>
+        CareerJourney@Mail.com<br>
+        copyright of Career Journey<br>
+        since 2025<br>
+        <a href="TermsAndConditions.html">Terms and conditions</a>
+      </p>
+    </div>
+
+     <div class="footer-logo">
+      <h2><i>FutureForge</i></h2>
+    </div>
+
+
+    <div class="footer-right">
+      <p>links<br>
+        AmberFabric.com<br>
+        website links<br>
+        business number<br>
+        095 664 0155</p>
+    </div>
+
+   
+  </footer>
+</body>
+</html>

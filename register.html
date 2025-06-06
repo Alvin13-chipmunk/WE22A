@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureForge | Registration</title>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="top-nav">
+        <div class="logo-box">
+            <h2><i>FutureForge</i></h2>
+        </div>
+
+        <label for="" class="icons">
+            <i class="bx bx-menu"></i> 
+        </label>
+
+        <nav class="nav-bar" id="navLinks" >
+            <a href="index.html">Home</a>
+            <a href="register.html">Register/Login</a>
+            <a href="story.html">Profile</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="skills.html">Skills</a>
+        </nav>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuIcon = document.querySelector(".icons");
+                const navLinks = document.getElementById("navLinks");
+
+                menuIcon.addEventListener("click", () => {
+                    navLinks.classList.toggle("active");
+                });
+            });
+        </script>
+    </header>
+
+    <table>
+        <tr>
+        
+            <td width="800px" style="color: white; background-color: black; padding: 50px;">
+                <section class="register-section">
+                    <form onsubmit="return registerUser(event)">
+                        <label for="regName">Full Name:</label>
+                        <input type="text" id="regName" required><br><br>
+                            
+                        <label for="regEmail">Email:</label>
+                        <input type="email" id="regEmail" required><br><br>
+
+                        <label for="regPassword">Password:</label>
+                        <input type="password" id="regPassword" required><br><br>
+          
+                        <input type="submit" value="Register" class="btn"><br><br>
+                        <p style="margin-top:18px;">Already have an account? <a href="Login.html">Login here</a></p>
+                    </form>
+                    <script src="Authentication.js"></script>
+                </section>
+            </td>
+
+            <td  style="color: white; width: 800px;" align="center" valign="middle" >
+                        <h1 style="font-size: 70px;">Register</h1>
+            </td>
+        </tr>
+    </table>    
+
+    <footer>
+    <div class="footer-left">
+      <p>
+        CareerJourney@Mail.com<br>
+        copyright of Career Journey<br>
+        since 2025<br>
+        <a href="TermsAndConditions.html">Terms and conditions</a>
+      </p>
+    </div>
+
+     <div class="footer-logo">
+      <h2><i>FutureForge</i></h2>
+    </div>
+
+
+    <div class="footer-right">
+      <p>links<br>
+        AmberFabric.com<br>
+        website links<br>
+        business number<br>
+        095 664 0155</p>
+    </div>
+
+   
+  </footer>
+</body>
+</html>

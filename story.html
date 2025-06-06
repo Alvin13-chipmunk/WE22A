@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Journey | Story </title>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="top-nav">
+        <div class="logo-box">
+            <h2><i>FutureForge</i></h2>
+        </div>
+
+        <label for="" class="icons">
+            <i class="bx bx-menu"></i> 
+        </label>
+
+        <nav class="nav-bar" id="navLinks" >
+            <a href="index.html">Home</a>
+            <a href="register.html">Register/Login</a>
+            <a href="story.html">Profile</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="skills.html">Skills</a>
+        </nav>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuIcon = document.querySelector(".icons");
+                const navLinks = document.getElementById("navLinks");
+
+                menuIcon.addEventListener("click", () => {
+                    navLinks.classList.toggle("active");
+                });
+            });
+        </script>
+    </header>
+
+    <table>
+        <tr>
+            <td  width="800px" style="color: white; background-color: black; padding: 20px;">
+                 <main>
+                    <section class="profile-section">
+                        <h2>Profile Information</h2>
+                            <form id="profileForm" onsubmit="return saveProfile(event)">
+                                <label for="profileName">Full Name:</label>
+                                <input type="text" id="profileName" required />
+                                <label for="profileEmail">Email:</label>
+                                <input type="email" id="profileEmail" required />
+                                <label for="profileSkills">Skills:</label>
+                                <textarea id="profileSkills" placeholder="e.g., HTML, CSS, JavaScript"></textarea>
+                                <label for="profileQualifications">Qualifications:</label>
+                                <textarea id="profileQualifications" placeholder="e.g., Diploma in Web Development"></textarea>
+
+                                <input type="submit" value="Update Profile" class="btn">
+                            </form>
+
+                        <h2>Saved Profile</h2>
+                            <div id="savedProfile">
+                                <p><strong>Name:</strong> <span id="savedName">-</span></p>
+                                <p><strong>Email:</strong> <span id="savedEmail">-</span></p>
+                                <p><strong>Skills:</strong> <span id="savedSkills">-</span></p>
+                                <p><strong>Qualifications:</strong> <span id="savedQualifications">-</span></p>
+                            </div>
+
+                        <button onclick="logout()" class="btn logout-btn">Logout</button>
+                    </section>
+
+                    <script src="Profile.js"></script>
+                </main>
+            </td>
+            <td style="color: white; width: 800px;" align="center" valign="middle">
+                        <h1 style="font-size: 50px;">User Profile</h1>
+                   
+            </td>
+        </tr>
+    </table>    
+
+
+    <footer>
+    <div class="footer-left">
+      <p>
+        CareerJourney@Mail.com<br>
+        copyright of Career Journey<br>
+        since 2025<br>
+        <a href="TermsAndConditions.html">Terms and conditions</a>
+      </p>
+    </div>
+
+    <div class="footer-logo">
+      <h2><i>FutureForge</i></h2>
+    </div>
+
+    <div class="footer-right">
+      <p>links<br>
+        AmberFabric.com<br>
+        website links<br>
+        business number<br>
+        095 664 0155</p>
+    </div>
+
+  </footer>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureForge | Skills </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="top-nav">
+        <div class="logo-box">
+            <h2><i>FutureForge</i></h2>
+        </div>
+
+        <label for="" class="icons">
+            <i class="bx bx-menu"></i> 
+        </label>
+
+         <nav class="nav-bar" id="navLinks" >
+            <a href="index.html">Home</a>
+            <a href="register.html">Register/Login</a>
+            <a href="story.html">Profile</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="skills.html">Skills</a>
+        </nav>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuIcon = document.querySelector(".icons");
+                const navLinks = document.getElementById("navLinks");
+
+                menuIcon.addEventListener("click", () => {
+                    navLinks.classList.toggle("active");
+                });
+            });
+        </script>
+    </header>
+
+<table>
+        <tr>  
+            <td width="800px" style="color: white; background-color: black; padding: 50px;">
+                <main>
+                    <section class="skills-main-panel">
+                        <p id="date" class="skills-date"></p>
+
+                        <div class="advance-skills">
+                            <h2>Welcome, <span id="user-name"></span>!</h2>
+                            <p id="intro"></p>
+                            <p>Your work preference: <span id="work-type"></span></p>
+                            <p>Your readiness score: <span id="score"></span>%</p>
+                        </div>
+
+                        <div class="study-options">
+                            <h3>Where to Learn Future Skills 📚</h3>
+                            <div class="platform-list">
+                                <div class="platform-card">
+                                    <div>
+                                        <strong>Coursera</strong><br>
+                                        <span>Data Science, Business, Tech</span>
+                                    </div>
+                                    <a href="https://www.coursera.org" target="_blank">Visit Coursera</a>
+                                    <input type="checkbox" class="progress-check" data-id="coursera">
+                                </div>
+                                <div class="platform-card">
+                                    <div>
+                                        <strong>edX</strong><br>
+                                        <span>Programming, AI, Cybersecurity</span>
+                                    </div>
+                                    <a href="https://www.edx.org" target="_blank">Visit edX</a>
+                                    <input type="checkbox" class="progress-check" data-id="edx">
+                                </div>
+                                <div class="platform-card">
+                                    <div>
+                                        <strong>Udemy</strong><br>
+                                        <span>Web Development, Marketing, IT</span>
+                                    </div>
+                                    <a href="https://www.udemy.com" target="_blank">Visit Udemy</a>
+                                    <input type="checkbox" class="progress-check" data-id="udemy">
+                                </div>
+                                <div class="platform-card">
+                                    <div>
+                                        <strong>LinkedIn Learning</strong><br>
+                                        <span>Leadership, Project Management</span>
+                                    </div>
+                                    <a href="https://www.linkedin.com/learning" target="_blank">Visit LinkedIn Learning</a>
+                                    <input type="checkbox" class="progress-check" data-id="linkedin">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-progress">
+                            <h3>Current Skill Progress</h3>
+                            <div class="progress-row">
+                                <label>HTML</label>
+                                <progress value="80" max="100"></progress>
+                            </div>
+                            <div class="progress-row">
+                                <label>JavaScript</label>
+                                <progress value="60" max="100"></progress>
+                            </div>
+                            <div class="progress-row">
+                                <label>SQL</label>
+                                <progress value="50" max="100"></progress>
+                            </div>
+                        </div>
+
+                        <div class="future-goals">
+                            <h3>Skills I Want to Learn</h3>
+                            <ul>
+                                <li>Cloud Computing (Azure or AWS)</li>
+                                <li>React or Angular</li>
+                                <li>Mobile App Development with Flutter</li>
+                            </ul>
+                        </div>
+
+                        <div class="tip-box">
+                            <h4>💡 Tip of the Day:</h4>
+                            <p>Small consistent steps lead to big progress. Focus on one new skill each month.</p>
+                        </div>
+
+                        <div id="congratsMessage" class="story-end" style="display: none;">
+                            <h3>🎉 Congratulations!</h3>
+                            <p>You’ve completed all your current learning goals. Keep pushing forward!</p>
+                        </div>
+                    </section>
+                </main>
+            </td>
+
+            <td  style="color: white; width: 800px;" align="center" valign="middle" >
+                <h1 style="font-size: 50px;">Broaden Your Skills</h1>
+            </td>
+        </tr>
+    </table>
+               
+    <script src="script.js"></script>
+
+    <footer>
+    <div class="footer-left">
+      <p>
+        CareerJourney@Mail.com<br>
+        copyright of Career Journey<br>
+        since 2025<br>
+        <a href="TermsAndConditions.html">Terms and conditions</a>
+      </p>
+    </div>
+
+    <div class="footer-logo">
+      <h2><i>FutureForge</i></h2>
+    </div>
+
+    <div class="footer-right">
+      <p>links<br>
+        AmberFabric.com<br>
+        website links<br>
+        business number<br>
+        095 664 0155</p>
+    </div>
+
+  </footer>
+</body>
+</html>
